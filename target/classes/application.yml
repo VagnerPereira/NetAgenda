@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /agenda
+  error:
+    include-message: always
+    include-binding-errors: always
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+spring:
+  main:
+    #    web-application-type: none
+    allow-bean-definition-overriding: true
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    hikari:
+      maximum-pool-size: 7
+    username: uwtvglzsvazdhr
+    password: c85f8767dcea89a19e72524b1b54fef6628fb3da218e7318960c3a26c6bff612
+    url: jdbc:postgresql://ec2-107-22-18-26.compute-1.amazonaws.com:5432/d9k2q0mp0fo469?currentSchema=public
+    driver-class-name: org.postgresql.Driver

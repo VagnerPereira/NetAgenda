@@ -1,0 +1,9 @@
+ - Cadastrar paciente, -- pronto
+ - Cadastrar médico, -- pronto
+ - Marcar consulta, 
+ - Realizar consulta, 
+ - Cancelar consulta,
+ - Marcar exame,
+ - Executar exame,
+ - Retornar todos os médicos disponíveis em tal data e horário,
+ - Retornar todos os exames concluídos de tal paciente.
