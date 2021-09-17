@@ -15,7 +15,6 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Table
 @Entity
-@DiscriminatorValue(value="Tipo2")
 public class Medico extends Profissional{
 
     @Column(name = "identificador_medico")

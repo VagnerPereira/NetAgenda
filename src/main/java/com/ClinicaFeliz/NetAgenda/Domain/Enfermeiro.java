@@ -11,7 +11,6 @@ import javax.persistence.*;
 @Table
 @Builder
 @Entity
-@DiscriminatorValue(value="Tipo1")
 public class Enfermeiro extends Profissional{
 
     @Column(name = "identificador_enfermagem")

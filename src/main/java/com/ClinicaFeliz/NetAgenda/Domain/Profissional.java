@@ -3,6 +3,7 @@ package com.ClinicaFeliz.NetAgenda.Domain;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 
 @Getter
@@ -10,14 +11,13 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Inheritance(strategy= InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name="tipo", length=10, discriminatorType=DiscriminatorType.STRING)
+@Inheritance(strategy= InheritanceType.TABLE_PER_CLASS)
 @SequenceGenerator(name = "seq_profissional", sequenceName = "seq_profissional", allocationSize = 1)
-public class Profissional {
+public class Profissional implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_profissional")
-    private long profissionalId;
+    private long id;
 
     @Column(name = "nome")
     private String nome;

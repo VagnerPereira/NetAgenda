@@ -9,6 +9,4 @@ public interface MedicoRepository extends JpaRepository<Medico, Long> {
     Medico save (Medico medico);
     Medico getById(long id);
 
-    @Query("")
-    Medico get(long id);
 }

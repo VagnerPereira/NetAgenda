@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ConsultaRepository extends JpaRepository<Consulta, Long> {
     Consulta save (Consulta consulta);
+    Consulta getById(long id);
 }

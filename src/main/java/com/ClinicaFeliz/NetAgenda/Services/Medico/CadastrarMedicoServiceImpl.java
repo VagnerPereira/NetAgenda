@@ -5,7 +5,9 @@ import com.ClinicaFeliz.NetAgenda.Mappers.MedicoMapper;
 import com.ClinicaFeliz.NetAgenda.Repository.MedicoRepository;
 import com.ClinicaFeliz.NetAgenda.Requests.CadastraMedicoRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CadastrarMedicoServiceImpl implements CadastrarMedicoService{
 
     @Autowired
